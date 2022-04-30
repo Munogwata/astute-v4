@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,400;1,700&display=swap");
+
+//fonts
+$ibm-plex-sans: "IBM Plex Sans", sans-serif;
+
+//font-weightings
+$bold: 700;
+$regular: 400;
+
+//link fonts
+@mixin menu-link-default {
+  font-family: $ibm-plex-sans;
+  font-size: 30px;
+  font-weight: $bold;
+}
+
+@mixin sublinks-default {
+  font-family: $ibm-plex-sans;
+  font-size: 25px;
+  font-weight: $bold;
+}
+
+@mixin footer-link-default {
+  font-family: $ibm-plex-sans;
+  font-size: 16px;
+  font-weight: $bold;
+}
+
+@mixin footer-link-activated {
+  font-family: $ibm-plex-sans;
+  font-size: 20px;
+  font-weight: $bold;
+}
+
+//the text fonds
+@mixin logo-text-default {
+  font-family: $ibm-plex-sans;
+  font-size: 45px;
+  font-weight: $bold;
+}
