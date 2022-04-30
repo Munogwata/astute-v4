@@ -17,9 +17,14 @@
   width: mediaquery.$inner-desktoppage-container;
 }
 
+.footerTopRow {
+  height: 182px;
+  display: flex;
+}
+
 .footerColumnOne {
   width: 135px;
-  padding-right: 92px;
+  margin-right: 92px;
   display: flex;
   flex-direction: column;
 }
@@ -27,6 +32,10 @@
 .footerColumnTwo {
   width: 302px;
   padding-right: 152px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
 }
 
 .footerColumnThree {
@@ -35,5 +44,31 @@
 
 .textLogo {
   @include font.logo-text-default;
+  padding-bottom: 8px;
+}
+
+.headingBox {
+  height: 34px;
+  width: 302px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.footerHeadings {
+  @include font.sublinks-default;
+}
+
+.textLogohidden {
+  @include font.logo-text-default;
+  padding-bottom: 8px;
+  color: color.$dark-grey;
+}
+
+.footerLink {
+  @include font.footer-link-default;
   padding-bottom: 8px;
 }
