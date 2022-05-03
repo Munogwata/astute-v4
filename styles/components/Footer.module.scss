@@ -58,6 +58,10 @@
   padding-bottom: 8px;
 }
 
+.textLogo:hover {
+  color: color.$primary-blue-main;
+}
+
 .headingBox {
   height: 34px;
   width: 302px;
@@ -71,6 +75,14 @@
 
 .footerHeadings {
   @include font.sublinks-default;
+}
+
+.footerindividualLink:hover {
+  color: color.$light-grey;
+}
+
+.footersublinks:hover {
+  color: color.$light-grey;
 }
 
 .textLogohidden {

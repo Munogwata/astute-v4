@@ -23,17 +23,17 @@ function Footer() {
               </span>
               <span className={footerstyles.footerLink}>
                 <Link href='/about'>
-                  <a>About</a>
+                  <a className={footerstyles.footerindividualLink}>About</a>
                 </Link>
               </span>
               <span className={footerstyles.footerLink}>
                 <Link href='/career'>
-                  <a>Careers</a>
+                  <a className={footerstyles.footerindividualLink}>Careers</a>
                 </Link>
               </span>
               <span className={footerstyles.footerLink}>
                 <Link href='/media'>
-                  <a>Media</a>
+                  <a className={footerstyles.footerindividualLink}>Media</a>
                 </Link>
               </span>
             </div>
@@ -47,13 +47,17 @@ function Footer() {
 
               <span className={footerstyles.footerLink}>
                 <Link href='/submit'>
-                  <a>Submit Article</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Submit Article
+                  </a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/contact'>
-                  <a>Contact Us</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Contact Us
+                  </a>
                 </Link>
               </span>
             </div>
@@ -65,13 +69,15 @@ function Footer() {
 
               <span className={footerstyles.footerLink}>
                 <Link href='/account'>
-                  <a>Manage Your Account</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Manage Your Account
+                  </a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/pricing'>
-                  <a>Pricing</a>
+                  <a className={footerstyles.footerindividualLink}>Pricing</a>
                 </Link>
               </span>
             </div>
@@ -87,25 +93,27 @@ function Footer() {
 
               <span className={footerstyles.footerLink}>
                 <Link href='/make'>
-                  <a>Make</a>
+                  <a className={footerstyles.footerindividualLink}>Make</a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/keep'>
-                  <a>Keep</a>
+                  <a className={footerstyles.footerindividualLink}>Keep</a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/grow'>
-                  <a>Grow</a>
+                  <a className={footerstyles.footerindividualLink}>Grow</a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/money'>
-                  <a>Your Money</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Your Money
+                  </a>
                 </Link>
               </span>
             </div>
@@ -118,13 +126,17 @@ function Footer() {
               </div>
               <span className={footerstyles.footerLink}>
                 <Link href='/submit'>
-                  <a>Submit Issues</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Submit Issues
+                  </a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/support'>
-                  <a>Get Support</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Get Support
+                  </a>
                 </Link>
               </span>
             </div>
@@ -136,19 +148,25 @@ function Footer() {
 
               <span className={footerstyles.footerLink}>
                 <Link href='/privacy'>
-                  <a>Privacy Policy</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Privacy Policy
+                  </a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/disclaimer'>
-                  <a>Disclaimer</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Disclaimer
+                  </a>
                 </Link>
               </span>
 
               <span className={footerstyles.footerLink}>
                 <Link href='/advisor'>
-                  <a>Financial Advisory</a>
+                  <a className={footerstyles.footerindividualLink}>
+                    Financial Advisory
+                  </a>
                 </Link>
               </span>
             </div>
