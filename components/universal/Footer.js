@@ -336,7 +336,6 @@ function Footer() {
 
           <div className={footerstyles.bottomRow}>
             <span className={footerstyles.footerlegals}>
-              {" "}
               Copyright 2022. All rights reserved.
             </span>
             <span className={footerstyles.footerlegals}> South Africa</span>
