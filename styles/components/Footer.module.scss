@@ -110,3 +110,184 @@
 .footerlegals {
   @include font.body-small-regular;
 }
+
+.mobileFooter {
+  visibility: hidden;
+  display: none;
+}
+
+//the media queries for responsive footer
+
+@media (max-width: mediaquery.$desktop-query) and (min-width: mediaquery.$tablet-query) {
+  .footerContentContainer {
+    width: mediaquery.$inner-tabletpage-container;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerTopRow {
+    height: 159px;
+    display: flex;
+  }
+
+  .footerSecondRow {
+    height: 184px;
+    display: flex;
+  }
+
+  .footerColumnOne {
+    width: 90px;
+    margin-right: 62px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerColumnTwo {
+    width: 240px;
+    margin-right: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .footerColumnThree {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .textLogo {
+    @include font.logo-text-small;
+    padding-bottom: 8px;
+  }
+
+  .footerHeadings {
+    @include font.sublinks-small;
+  }
+  .headingBox {
+    height: 34px;
+    width: 302px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+
+  .rowSpace {
+    display: flex;
+    height: 16px;
+  }
+
+  .mobileFooter {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: mediaquery.$tablet-query) {
+  .footerContentContainer {
+    width: mediaquery.$inner-mobilepage-container;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerTopRow {
+    display: none;
+  }
+
+  .footerSecondRow {
+    display: none;
+  }
+
+  .footerColumnOne {
+    display: none;
+  }
+
+  .footerColumnTwo {
+    display: none;
+  }
+
+  .footerColumnThree {
+    display: none;
+  }
+
+  .footerHeadings {
+    display: none;
+  }
+  .headingBox {
+    display: none;
+  }
+
+  .rowSpace {
+    display: none;
+  }
+
+  .bottomRow {
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+  }
+
+  .footerlegals {
+    @include font.body-small-regular;
+    padding-bottom: 8px;
+  }
+
+  .textLogo {
+    @include font.logo-text-small;
+    padding-bottom: 8px;
+  }
+  .mobileFooter {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobilefooterRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: color.$white;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    align-items: center;
+  }
+
+  .footerbutton {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    padding: 0px;
+  }
+
+  .footerlinksContainer {
+    display: flex;
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+  .footermobileHeading {
+    @include font.sublinks-small;
+    padding-bottom: 4px;
+  }
+
+  .footersublinks {
+    padding-top: 4px;
+    padding-bottom: 12px;
+    // @include
+  }
+
+  .footerLink {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line {
+    display: none;
+  }
+}

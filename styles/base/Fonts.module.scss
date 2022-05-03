@@ -22,6 +22,12 @@ $regular: 400;
   font-weight: $bold;
 }
 
+@mixin sublinks-small {
+  font-family: $ibm-plex-sans;
+  font-size: 20px;
+  font-weight: $bold;
+}
+
 @mixin footer-link-default {
   font-family: $ibm-plex-sans;
   font-size: 16px;
@@ -38,6 +44,12 @@ $regular: 400;
 @mixin logo-text-default {
   font-family: $ibm-plex-sans;
   font-size: 45px;
+  font-weight: $bold;
+}
+
+@mixin logo-text-small {
+  font-family: $ibm-plex-sans;
+  font-size: 30px;
   font-weight: $bold;
 }
 
