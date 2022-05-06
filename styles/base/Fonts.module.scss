@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap");
 
 //fonts
 $ibm-plex-sans: "IBM Plex Sans", sans-serif;
 $domine: "Domine", serif;
+$roboto: "Roboto", sans-serif;
 
 //font-weightings
 $bold: 700;
@@ -58,4 +60,11 @@ $regular: 400;
   font-size: 16px;
   font-family: $domine;
   font-weight: $regular;
+}
+
+//the buttons
+@mixin button-text-default {
+  font-family: $roboto;
+  font-size: 25px;
+  font-weight: $bold;
 }

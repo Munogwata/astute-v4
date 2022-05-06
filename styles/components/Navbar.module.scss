@@ -1,0 +1,62 @@
+@use "../base/Colors.module.scss" as color;
+@use "../base/MediaQueries.module.scss" as mediaquery;
+@use "../base/Fonts.module.scss" as font;
+
+.topRow {
+  background-color: color.$light-grey;
+  display: flex;
+  width: 100%;
+  height: 75px;
+  top: 0;
+  position: relative;
+  justify-content: center;
+}
+
+.linksContainer {
+  width: mediaquery.$inner-desktoppage-container;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.linksRow {
+  width: 656px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.hoverContainerMake {
+  visibility: hidden;
+}
+
+.topRow:hover + .hoverContainer {
+  visibility: visible;
+}
+
+.textLogo {
+  @include font.logo-text-default;
+  padding-right: 91px;
+}
+
+.menuLink {
+  color: color.$black;
+  @include font.menu-link-default;
+  padding-right: 91px;
+}
+
+.button {
+  width: 166px;
+  height: 49px;
+  border-radius: 15px;
+  background-color: color.$primary-blue-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonLink {
+  color: color.$white;
+  @include font.button-text-default;
+}
