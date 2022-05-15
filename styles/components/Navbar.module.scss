@@ -2,13 +2,234 @@
 @use "../base/Fonts.module.scss" as font;
 @use "../base/MediaQueries.module.scss" as mediaquery;
 
+$tablet: mediaquery.$inner-desktoppage-container;
+
 .navContainer {
   width: 100%;
   background-color: color.$light-grey;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .linksContainer {
-  width: mediaquery.$inner-desktoppage-container;
+  width: $tablet;
+  display: flex;
+  background-color: orange;
+  flex-direction: column;
 }
+
+.linkBox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  min-height: fit-content;
+  align-items: center;
+  background-color: yellow;
+}
+
+.sublinkBox {
+  width: 100%;
+  background-color: skyblue;
+  height: fit-content;
+  display: flex;
+}
+
+.linkAlignment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: space-between;
+  align-items: center;
+  align-content: center;
+  width: 670px;
+}
+
+.activeLogoLink {
+  @include font.logo-text-default;
+  color: color.$primary-blue-main;
+  margin-right: 80px;
+}
+
+.deactiveLogoLink {
+  @include font.logo-text-default;
+  color: color.$light-grey;
+  margin-right: 80px;
+}
+
+.makeLogoLink {
+  @include font.logo-text-default;
+  color: color.$primary-lavendar-main;
+  margin-right: 80px;
+}
+
+.keepLogoLink {
+  @include font.logo-text-default;
+  color: color.$primary-orange-medium;
+  margin-right: 80px;
+}
+
+.growLogoLink {
+  @include font.logo-text-default;
+  color: color.$primary-green-main;
+  margin-right: 80px;
+}
+
+.moneyLogoLink {
+  @include font.logo-text-default;
+  color: color.$primary-blue-light;
+  margin-right: 80px;
+}
+
+@mixin deactiveMenuLink {
+  @include font.menu-link-default;
+  margin-right: 80px;
+}
+
+.makeDeactivateLink {
+  @include deactiveMenuLink;
+
+  &:hover {
+    color: color.$primary-lavendar-light;
+  }
+}
+
+.makeMenuLink {
+  @include font.menu-link-default;
+  color: color.$primary-lavendar-dark;
+  padding: 0px;
+  margin-right: 80px;
+}
+
+.keepMenuLink {
+  @include font.menu-link-default;
+  padding: 0px;
+  margin-right: 80px;
+
+  color: color.$primary-orange-main;
+}
+
+.growMenuLink {
+  @include font.menu-link-default;
+  padding: 0px;
+  margin-right: 80px;
+
+  color: color.$primary-green-medium;
+}
+
+.inActiveGrowButton {
+  width: 166px;
+  height: 49px;
+  background-color: color.$primary-blue-main;
+  color: color.$white;
+  @include font.button-text-default;
+  border: none;
+  border-radius: 15px;
+}
+
+.activeGrowButton {
+  width: 166px;
+  height: 49px;
+  background-color: transparent;
+  color: color.$primary-blue-main;
+  @include font.button-text-default;
+  border: 1px color.$white solid;
+  border-radius: 15px;
+}
+
+@mixin list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  width: 100%;
+  align-content: center;
+  position: center;
+}
+.makeSublinks {
+  display: none;
+
+  @include list;
+
+  background-color: pink;
+  align-content: center;
+  justify-content: center;
+
+  //width: 670px;
+}
+
+.makeFullLinks {
+  @include list;
+
+  display: flex;
+}
+
+.makeFullLinks:hover .makeSublinks {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-self: center;
+  position: absolute;
+}
+
+.makeFullLinks:hover .background {
+  display: flex;
+}
+.keepFullLinks {
+  @include list;
+}
+
+.keepSublinks {
+  display: none;
+  flex-direction: column;
+  @include list;
+}
+
+.keepFullLinks:hover .keepSublinks {
+  display: flex;
+}
+
+.growFullLinks {
+  @include list;
+}
+
+.growSublinks {
+  display: none;
+  flex-direction: column;
+  @include list;
+}
+
+.growFullLinks:hover .growSublinks {
+  display: flex;
+}
+
+.moneyFullLinks {
+  @include list;
+}
+
+.moneySublinks {
+  display: none;
+  flex-direction: column;
+  @include list;
+}
+
+.moneyFullLinks:hover .growSublinks {
+  display: flex;
+}
+
+.test {
+  display: flex;
+  color: red;
+  justify-content: center;
+}
+
+.test3 {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  width: 880px;
+  padding-top: 18px;
+}
+
+// an intern will have to bring consistency with the capital and lower case use of l in links
