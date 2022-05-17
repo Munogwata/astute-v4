@@ -1,0 +1,26 @@
+@use "../base/Colors.module.scss" as color;
+@use "../base/Fonts.module.scss" as font;
+@use "../base/MediaQueries.module.scss" as mediaquery;
+
+.welcomeContainer {
+  background-color: color.$medium-grey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: color.$medium-grey;
+}
+
+.contentBox {
+  width: mediaquery.$inner-desktoppage-container;
+  @include font.label-small-regular;
+  text-align: center;
+  color: color.$white;
+  padding: 16px;
+  line-height: 16px;
+}
+
+@media (max-width: mediaquery.$tablet-query) {
+  .contentBox {
+    width: 100%;
+  }
+}

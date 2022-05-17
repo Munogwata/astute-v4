@@ -20,13 +20,13 @@ $regular: 400;
 
 @mixin sublinks-default {
   font-family: $ibm-plex-sans;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: $bold;
 }
 
 @mixin sublinks-small {
   font-family: $ibm-plex-sans;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: $bold;
 }
 
@@ -42,7 +42,7 @@ $regular: 400;
   font-weight: $bold;
 }
 
-//the text fonds
+//the text fonts
 @mixin logo-text-default {
   font-family: $ibm-plex-sans;
   font-size: 45px;
@@ -62,9 +62,88 @@ $regular: 400;
   font-weight: $regular;
 }
 
+@mixin body-large-regular {
+  font-size: 20px;
+  font-family: $domine;
+  font-weight: $regular;
+}
+
+@mixin body-large-bold {
+  font-size: 20px;
+  font-family: $domine;
+  font-weight: $bold;
+}
+
+@mixin body-medium-bold {
+  font-size: 18px;
+  font-family: $domine;
+  font-weight: $bold;
+}
+
+@mixin body-medium-regular {
+  font-size: 18px;
+  font-family: $domine;
+  font-weight: $regular;
+}
+
+@mixin body-small-body {
+  font-size: 16px;
+  font-family: $domine;
+  font-weight: $bold;
+}
+
+@mixin body-small-regular {
+  font-size: 16px;
+  font-family: $domine;
+  font-weight: $regular;
+}
+
 //the buttons
 @mixin button-text-default {
   font-family: $roboto;
+  font-size: 25px;
+  font-weight: $bold;
+}
+
+@mixin button-text-small {
+  font-family: $roboto;
+  font-size: 16px;
+  font-weight: $bold;
+}
+
+//alerts warnings
+@mixin alert {
+  @include body-medium-bold;
+}
+
+//labels
+
+@mixin label-small {
+  font-family: $domine;
+  font-size: 16px;
+  font-weight: $bold;
+}
+
+@mixin label-mobile-small {
+  font-family: $domine;
+  font-size: 14px;
+  font-weight: $bold;
+}
+
+@mixin label-small-regular {
+  font-family: $domine;
+  font-size: 12px;
+  font-weight: $regular;
+}
+
+@mixin label-tags-default {
+  font-family: $ibm-plex-sans;
+  font-size: 20px;
+  font-weight: $bold;
+}
+
+@mixin label-tags-large {
+  font-family: $ibm-plex-sans;
   font-size: 25px;
   font-weight: $bold;
 }

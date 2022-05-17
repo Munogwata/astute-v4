@@ -1,0 +1,136 @@
+@use "../base/Colors.module.scss" as color;
+@use "../base/Fonts.module.scss" as font;
+@use "../base/MediaQueries.module.scss" as mediaquery;
+
+$marketBox: 440px;
+
+//the structure of the bar
+
+.navbarContainer {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.navbarContainerToolkit {
+  background-color: color.$primary-blue-grey;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbarContainerWavy {
+  background-color: color.$primary-green-neon;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@mixin navbarContainerContent {
+  width: $marketBox;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarContainerToolkitContent {
+  @include navbarContainerContent;
+  background-color: color.$primary-blue-grey;
+}
+
+.navbarContainerWavyContent {
+  @include navbarContainerContent;
+  background-color: color.$primary-green-neon;
+}
+
+@mixin productHeading {
+  @include font.sublinks-default;
+}
+
+.wavyHeading {
+  @include productHeading;
+  color: color.$primary-green-dark;
+}
+
+.toolkitHeading {
+  @include productHeading;
+  color: color.$white;
+}
+
+.productBodyWavy {
+  @include font.label-mobile-small;
+  color: color.$primary-green-dark;
+  padding-top: 4px;
+}
+
+.productBodyToolkit {
+  @include font.label-mobile-small;
+  color: color.$white;
+  padding-top: 4px;
+}
+
+.align {
+  display: flex;
+  height: 26px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  align-content: center;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  object-fit: fit;
+  margin-right: 8px;
+}
+
+.buttonRowToolkit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: color.$white;
+  padding-right: 12px;
+  @include font.button-text-small;
+}
+
+.buttonRowWavy {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: color.$primary-green-dark;
+  padding-right: 12px;
+  @include font.button-text-small;
+}
+
+@media (max-width: mediaquery.$tablet-query) {
+  .navbarContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbarContainerToolkit {
+    background-color: color.$primary-blue-grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .navbarContainerWavy {
+    background-color: color.$primary-green-neon;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
